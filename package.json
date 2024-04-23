@@ -14,10 +14,19 @@
   "contributes": {
     "commands": [
       {
-        "command": "helloWorld",
-        "title": "Hello World"
+        "command": "runDH14",
+        "title": "Run syslog - DH14"
       }
-    ]
+    ],
+    "configuration": {
+        "title": "Syslog",
+        "properties": {
+            "faradayToolsPath": {
+                "type": "string",
+                "default": "$HOME/repos/faraday-tools"
+            }
+        }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
